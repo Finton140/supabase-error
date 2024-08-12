@@ -10,7 +10,7 @@ if (!process.env.VERCEL_ENV) {
     neonConfig.pipelineTLS = false
     neonConfig.pipelineConnect = false
 
-    neonConfig.wsProxy = (host) => `${host}:54329/pooler/v2`;
+    neonConfig.wsProxy = (host) => `${host}:54321/pooler/v2/`;
 }
 
 export const db = drizzle(sql, { schema, logger: true })

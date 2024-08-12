@@ -11,7 +11,7 @@ async function runMigrations() {
         neonConfig.pipelineTLS = false
         neonConfig.pipelineConnect = false
     
-        neonConfig.wsProxy = (host) => `${host}:54329/pooler/v2`;
+        neonConfig.wsProxy = (host) => `${host}:54321/pooler/v2/`;
     }
     
     const db = drizzle(sql)
